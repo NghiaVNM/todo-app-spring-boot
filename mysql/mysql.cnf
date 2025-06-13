@@ -1,0 +1,28 @@
+[mysqld]
+# Basic configuration
+datadir=/var/lib/mysql
+socket=/var/lib/mysql/mysql.sock
+pid-file=/var/lib/mysql/mysqld.pid
+user=mysql
+
+# Performance and caching
+host_cache_size=0
+
+# Authentication
+default_authentication_plugin=caching_sha2_password
+
+# Character set
+character-set-server=utf8mb4
+collation-server=utf8mb4_unicode_ci
+
+# SSL
+auto_generate_certs=ON
+
+[client]
+socket=/var/lib/mysql/mysql.sock
+default-character-set=utf8mb4
+
+[mysql]
+default-character-set=utf8mb4
+
+!includedir /etc/mysql/conf.d/

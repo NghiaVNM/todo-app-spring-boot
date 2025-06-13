@@ -2,6 +2,7 @@
 
 Todo app with spring boot and mysql database.
 Features:
+- Configure MySQL with SSL.
 - Create user, login, authentication with Spring Security.
 - API with Spring MCV.
 - Save data in MySQL database.
