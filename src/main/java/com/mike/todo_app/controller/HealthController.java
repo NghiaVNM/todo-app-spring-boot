@@ -24,7 +24,7 @@ public class HealthController {
    * Basic application health check
    * GET /api/health
    */
-  @GetMapping
+  @GetMapping("/spring")
   public ResponseEntity<Map<String, Object>> healthCheck() {
     Map<String, Object> response = new HashMap<>();
     response.put("status", "UP");
